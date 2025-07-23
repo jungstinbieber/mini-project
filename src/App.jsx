@@ -1,11 +1,15 @@
-
-import './App.css'
+import { Route, Routes } from "react-router-dom"
+import Header from "./components/Header"
+import Main from "./pages/Main"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <Header />
+    <Routes>
+      <Route path='/main' element={<Main />} />
+    </Routes>
     
     </>
   )
