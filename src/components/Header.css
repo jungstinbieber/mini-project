@@ -1,0 +1,16 @@
+
+
+.nav{
+  margin: auto;
+  padding: 5px;
+  position: fixed;
+}
+.search{
+  
+}
+
+.login {
+  margin: auto;
+  
+  justify-content: space-between;
+}
