@@ -3,7 +3,7 @@ import './Float.css'
 function Float(){
   return(
     <>
-    <div className="container">
+    <div className="Float container">
       <div className="box">
         <h1>고객지원</h1>
         <p>상담신청</p>
