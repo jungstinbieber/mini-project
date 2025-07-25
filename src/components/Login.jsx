@@ -1,7 +1,7 @@
 function Login() {
   return(
     <>
-    <div className="loginContainer" style={{height:'500px', alignItems:'center', justifyContent:'center'}}>
+    <div className="loginContainer" style={{height:'500px', width:'300px', margin:'auto'}}>
       <div className="loginBox" style={{display:'flex', flexDirection:'column',width:'300px',gap:'10px',padding:'20px',
         borderRadius:'5px'
       }}>
