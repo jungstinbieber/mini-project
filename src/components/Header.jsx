@@ -17,6 +17,9 @@ function Header(){
   const loginclick = () =>{
     navigate('/Login')
   }
+  const  RealEstateMapClick = () =>{
+    navigate('/RealEstateMap')
+  }
 
   
   return(
@@ -24,20 +27,21 @@ function Header(){
       
 
 
-       <Nav variant="pills" defaultActiveKey="/main" className="nav" style={{backgroundColor:'#548ce8',position:"fixed", top:0, zIndex:99, width:'100%', }}>
+       <Nav variant="pills" defaultActiveKey="/main" className="nav" style={{backgroundColor:'#548ce8',position:"fixed", top:0, zIndex:99, width:'100%', justifyContent:'space-between' }}>
       <Nav.Item>
         <Nav.Link onClick={homeclick}><h3 style={{color:'black'}}><i class="fa-solid fa-house"></i>HOME</h3></Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Option 2</Nav.Link>
+        <Nav.Link onClick={RealEstateMapClick} eventKey="link-1"><h3 style={{color:'black'}}>상세검색</h3></Nav.Link>
       </Nav.Item>
       <Nav.Item  class='login'>
         <Nav.Link  >
-          <h5 onClick={loginclick} >로그인/회원가입</h5>
+          <h3 style={{color:'black'}} onClick={loginclick} >로그인/회원가입</h3>
+          
         </Nav.Link>
       </Nav.Item>
     </Nav>
-      
+    
 
     </>
   )

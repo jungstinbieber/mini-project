@@ -1,4 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
+
 function Login() {
+
+  const navigate = useNavigate();
+
+  const membershipClick = ()=>{
+    navigate('/Membership')
+  }
   return(
     <>
     <div className="loginContainer" style={{height:'500px', width:'300px', margin:'auto'}}>
@@ -11,7 +20,9 @@ function Login() {
         <hr>
         </hr>
        
-        <button>회원가입</button>
+        <button onClick={()=>{
+         membershipClick()
+        }}>회원가입</button>
       </div>
     </div>
     </>
