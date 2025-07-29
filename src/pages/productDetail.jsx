@@ -20,6 +20,7 @@ function ProductDtail() {
     
     <div className="Detailcontainer">
       <h1>{product.title}</h1>
+      <p>{product.text}</p>
       
       <div className="Detailbox">
 

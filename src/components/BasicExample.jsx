@@ -10,12 +10,12 @@ function BasicExample() {
   
   const navigate = useNavigate();
   const handleCardClick = (id)=>{
-    navigate(`/Product/${id}`)
+    navigate(`/product/${id}`)
   }
   
 
   return (
-    <Card className='cards' >
+    <Card style={{width:'1650px'}} className='cards' >
     {
       mok.map((item,i)=>{
   
