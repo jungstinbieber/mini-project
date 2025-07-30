@@ -4,7 +4,7 @@ function Carousel1() {
   return (
 
     
-    <Carousel  style={{width:'550px', margin:'auto', gap:'10px' }}>
+    <Carousel  style={{width:'550px',margin:'10px',  gap:'10px' }}>
       <Carousel.Item >
           <iframe width="560" height="500" src="https://www.youtube.com/embed/VD-puQk9uTM?si=bD03pIecr_CciykA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           

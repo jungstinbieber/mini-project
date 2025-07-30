@@ -27,7 +27,7 @@ function Header(){
       
 
 
-       <Nav variant="pills" defaultActiveKey="/main" className="nav" style={{backgroundColor:'#548ce8',position:"fixed", top:0, zIndex:99, width:'100%', justifyContent:'space-between' }}>
+       <Nav variant="pills" defaultActiveKey="/main" className="nav" style={{backgroundColor:'#548ce8',position:"fixed", top:0, zIndex:99, width:'90%', justifyContent:'space-between',margin:'auto'  }}>
       <Nav.Item>
         <Nav.Link onClick={homeclick}><h3 style={{color:'black'}}><i class="fa-solid fa-house"></i>HOME</h3></Nav.Link>
       </Nav.Item>

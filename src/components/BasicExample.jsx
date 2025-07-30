@@ -15,7 +15,7 @@ function BasicExample() {
   
 
   return (
-    <Card style={{width:'1650px'}} className='cards' >
+    <Card style={{width:'1440px', margin:'10px'}} className='cards' >
     {
       mok.map((item,i)=>{
   
@@ -35,11 +35,7 @@ function BasicExample() {
       })
 
     }
-
-
      </Card>
-
-    
   );
 }
 

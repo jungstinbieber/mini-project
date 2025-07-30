@@ -21,7 +21,9 @@ function App() {
     <Header />
     
     {
-      location.pathname !== '/Login' ?
+      ['/Login','/Membership'].includes(location.pathname) ?
+      null
+      :
       (
         <div style={{display:'flex', justifyContent:'space-between'}}>
           <Carousel1 />
@@ -29,8 +31,7 @@ function App() {
           <ChatComponent/>
          </div>
          
-      )
-      : null
+      ) 
     }
     <Routes>
       <Route path='/' element={<BasicExample/>}/>
