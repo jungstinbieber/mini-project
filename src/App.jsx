@@ -10,6 +10,7 @@ import RealEstateMap from "./components/RealEstateMap"
 import RealEstateDetail from "./components/RealEstateDetail"
 import ChatComponent from "./components/ChatComponent"
 import Exposure from "./components/Exposure"
+import Recommendation from "./components/Recommendation"
 
 function App() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function App() {
       <Route path="/RealEstateMap" element={<RealEstateMap/>}/>
       <Route path="/" element={<RealEstateMap />} />
       <Route path="/detail/:apartmentName" element={<RealEstateDetail />} />
+      <Route path="/Recommendation/:id" element={<Recommendation/>}/>
       
     </Routes>
     

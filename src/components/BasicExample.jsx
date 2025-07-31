@@ -29,8 +29,7 @@ function BasicExample() {
           <Button onClick={()=> handleCardClick(item.id)} variant="primary">더 보기</Button>
           <Card.Text>{item.address}</Card.Text>
         </Card.Body>
-  
-     
+
       )
       })
 

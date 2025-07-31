@@ -3,7 +3,8 @@ import dummy from './dummy';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
@@ -32,6 +33,7 @@ function SamplePrevArrow(props) {
 
 function Exposure() {
   const [apartments, setApartments] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const filteredApartments = dummy.filter(apt => apt.id >= 1 && apt.id <= 5);
@@ -62,16 +64,18 @@ function Exposure() {
     ],
   };
 
-  const handleBoxClick =(aptName)=>{
-    Navigate('/Map',{state:{aptName}});
+  const divClick = (id)=>{
+    navigate(`/Recommendation/${id}`)
   }
 
+  
   return (
     <>
-      <div  className="slider-container" style={{borderRadius:'20px', width: '450px', margin: '0 auto', padding: '20px', border: '1px solid black' }}>
-        <Slider {...sliderSettings}>
-          {apartments.map((apt, index) => (
-            <div onClick={handleBoxClick} key={index} className="ExposureBox" style={{
+      <div className="slider-container" style={{borderRadius:'20px', width: '450px', margin: '0 auto', padding: '20px', border: '1px solid black' }}>
+        
+        <Slider  {...sliderSettings}>
+          {apartments.map((apt, i) => (
+            <div  onClick={() => divClick(apt.id)} key={i} className="ExposureBox" style={{
               border: '1px solid #007bff',
               borderRadius: '10px',
               height: '500px',
@@ -84,8 +88,8 @@ function Exposure() {
               width: '350px',
               
             }}
-            
             >
+             
               <img
                 src={apt['img']}
                 alt={apt['아파트명']}
@@ -98,7 +102,10 @@ function Exposure() {
               
               <p>{apt['평수']}평</p>
             </div>
+            
           ))}
+          
+          
         </Slider>
       </div>
     </>

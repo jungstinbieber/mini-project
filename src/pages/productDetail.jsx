@@ -3,12 +3,11 @@ import mokup from "../mokup";
 import { useEffect } from "react";
 
 
-function ProductDtail() {
+function ProductDetail() {
 
   const { id } = useParams();
   const product = mokup.find((item) => item.id === parseInt(id));
 
-  // const ishosu = product.id===2
   
   useEffect(() => {
     document.querySelector('.Detailbox').innerHTML = product.text
@@ -20,7 +19,7 @@ function ProductDtail() {
     
     <div className="Detailcontainer">
       <h1>{product.title}</h1>
-      <p>{product.text}</p>
+      
       
       <div className="Detailbox">
 
@@ -31,4 +30,4 @@ function ProductDtail() {
   );
   
 }
-export default ProductDtail
+export default ProductDetail
