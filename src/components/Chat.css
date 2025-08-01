@@ -1,0 +1,74 @@
+.chat-container {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.message-list {
+  flex: 1;
+  overflow-y: auto; /* 스크롤 가능 */
+  padding: 10px;
+}
+
+.message {
+  margin: 10px 0;
+  max-width: 70%;
+}
+
+.sent {
+  margin-left: auto; /* 오른쪽 정렬 (내 메시지) */
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px 10px 0 10px;
+}
+
+.received {
+  background-color: #e9ecef;
+  border-radius: 10px 10px 10px 0;
+}
+
+.message-content {
+  padding: 8px 12px;
+  position: relative;
+}
+
+.message-time {
+  display: block;
+  font-size: 10px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* 크기 조정 방지 */
+}
+
+.send-button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
