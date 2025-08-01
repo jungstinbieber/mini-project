@@ -4,6 +4,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useNavigate } from 'react-router-dom';
+import './Hover.css'
+
 
 
 
@@ -42,7 +44,7 @@ function Exposure() {
 
   
 
-  
+
 
   const sliderSettings = {
     dots: true,
@@ -75,7 +77,7 @@ function Exposure() {
         
         <Slider  {...sliderSettings}>
           {apartments.map((apt, i) => (
-            <div  onClick={() => divClick(apt.id)} key={i} className="ExposureBox" style={{
+            <div onClick={() => divClick(apt.id)} key={i} className="ExposureBox" style={{
               border: '1px solid #007bff',
               borderRadius: '10px',
               height: '500px',
