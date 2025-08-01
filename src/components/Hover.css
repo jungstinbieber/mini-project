@@ -1,0 +1,31 @@
+.ExposureBox:hover{
+  filter: brightness(0.5);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.basicExampleBox:hover{
+  filter: brightness(0.5);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.CarouselBox:hover{
+  filter: brightness(0.5);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.iHome:hover{
+  filter: brightness(0.5);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.loginHover:hover{
+  filter: brightness(0.5);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.searchHover:hover{
+  filter: brightness(0.5);
+  transform: scale(1.05);
+  cursor: pointer;
+}

@@ -7,6 +7,9 @@ import { useNavigate } from 'react-router-dom';
 
 function BasicExample() {
   const mok = mokup
+
+ 
+
   
   const navigate = useNavigate();
   const handleCardClick = (id)=>{
@@ -15,13 +18,13 @@ function BasicExample() {
   
 
   return (
-    <Card style={{width:'1440px', margin:'10px'}} className='cards' >
+    <Card style={{width:'1440px', margin:'10px'}} className='cards'  >
     {
       mok.map((item,i)=>{
   
       return (
       
-        <Card.Body  key={i} >
+        <Card.Body className='basicExampleBox'  key={i} >
           <img src={item.img} alt="" style={{width: '100%', height: '150px'}} />
           <Card.Title>{item.title}</Card.Title>
           <Card.Text> {item.price} </Card.Text>
