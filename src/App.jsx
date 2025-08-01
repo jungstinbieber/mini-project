@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom"
 import Header from "./components/Header"
 import Carousel1 from "./components/Carousel"
-import BasicExample from "./components/basicExample"
+import BasicExample from "./components/BasicExample"
 import Float from "./components/Float"
 import ProductDetail from "./pages/productDetail"
 import Login from "./components/Login"
